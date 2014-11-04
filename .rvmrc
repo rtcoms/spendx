@@ -1,0 +1,6 @@
+if [[ -s "/usr/local/rvm/environments/ruby-2.1.1@spendx" ]] ; then
+ . "/usr/local/rvm/environments/ruby-2.1.1@spendx"
+ else
+  rvm --create use "ruby-2.1.1@spendx"
+fi
+
