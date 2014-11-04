@@ -37,6 +37,7 @@ gem 'devise', git: 'https://github.com/plataformatec/devise.git', :branch => 'lm
 gem 'omniauth'
 gem "omniauth-facebook"
 gem "omniauth-twitter"
+gem "money-rails"
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
