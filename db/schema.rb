@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104185616) do
+ActiveRecord::Schema.define(version: 20141104180936) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,13 +30,14 @@ ActiveRecord::Schema.define(version: 20141104185616) do
   end
 
   create_table "items", force: true do |t|
-    t.string   "name",                                     null: false
-    t.string   "affiliated_url",                           null: false
-    t.money    "price",          scale: 2,                 null: false
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
-    t.integer  "price_cents",              default: 0,     null: false
-    t.string   "price_currency",           default: "USD", null: false
+    t.string   "name",                           null: false
+    t.string   "affiliated_url",                 null: false
+    t.string   "image_url"
+    t.string   "url"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+    t.integer  "price_subunits", default: 0,     null: false
+    t.string   "price_currency", default: "USD", null: false
   end
 
   create_table "users", force: true do |t|

@@ -2,7 +2,7 @@ class AuthorizationsController < ApplicationController
   skip_before_filter :authenticate_user!
 
   def all
-    ap env["omniauth.auth"]
+    puts env["omniauth.auth"]
     user = User.from_omniauth(env["omniauth.auth"], current_user)
     if user.persisted?
       flash[:notice] = "You are in..!!! Go to edit profile to see the status for the accounts"
@@ -55,7 +55,7 @@ class AuthorizationsController < ApplicationController
     client.authorize_from_access(session[:atoken], session[:asecret])
     #id", "email-address", "first-name", "last-name", "headline", "industry", "picture-url", "public-profile-url", "location", "connections"
     @profile = client.profile(:fields => [:id, :email_address, :headline, :industry,  :first_name, :last_name, :picture_url,:educations, :positions, :public_profile_url, :connections, :location])
-    ap @profile
+    puts @profile
     logger.info @profile
     render :text => @profile.to_yaml
   end

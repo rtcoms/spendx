@@ -3,9 +3,10 @@ class CreateItems < ActiveRecord::Migration
     create_table :items do |t|
       t.string :name, null:false
       t.string :affiliated_url, null: false
-      t.money  :price, null: false
-
+      t.string :image_url
+      t.string :url
       t.timestamps null: false
     end
+    add_money :items, :price, currency: { present: true }
   end
 end

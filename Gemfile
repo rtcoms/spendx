@@ -38,6 +38,12 @@ gem 'omniauth'
 gem "omniauth-facebook"
 gem "omniauth-twitter"
 gem "money-rails"
+gem 'bootstrap-sass'
+gem 'bootstrap-sass-extras'
+gem 'countries'
+gem 'upmin-admin'
+gem "rack-dev-mark"
+# gem 'active_admin'
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console

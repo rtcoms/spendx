@@ -12,6 +12,7 @@ module Spendx
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.social_config = YAML.load_file("config/social_keys.yml")[Rails.env].symbolize_keys
+    config.rack_dev_mark.enable = !Rails.env.production?
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
