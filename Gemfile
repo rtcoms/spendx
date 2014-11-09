@@ -43,6 +43,7 @@ gem 'bootstrap-sass-extras'
 gem 'countries'
 gem 'upmin-admin'
 gem "rack-dev-mark"
+gem "carrierwave"
 # gem 'active_admin'
 
 group :development, :test do
