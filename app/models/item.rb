@@ -1,7 +1,6 @@
 class Item < ActiveRecord::Base
-  monetize :price_subunits, with_model_currency: :price_currency
 
-  validates :name, :url, :affiliated_url, presence: true
+  validates :name, presence: true
 
 end
 

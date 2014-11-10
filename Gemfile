@@ -41,10 +41,10 @@ gem "money-rails"
 gem 'bootstrap-sass'
 gem 'bootstrap-sass-extras'
 gem 'countries'
-gem 'upmin-admin'
 gem "rack-dev-mark"
 gem "carrierwave"
-# gem 'active_admin'
+gem 'upmin-admin'
+# gem 'activeadmin'
 # gem 'rails_admin'
 
 group :development, :test do
