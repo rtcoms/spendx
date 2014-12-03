@@ -1,4 +1,4 @@
-class WebItem < ActiveRecord::Base
+class WebsiteItem < ActiveRecord::Base
   monetize :price_subunits, with_model_currency: :price_currency
 
   validates :item, :website, :url, :affiliated_url, :country, presence: true

@@ -1,6 +1,6 @@
-class CreateWebItems < ActiveRecord::Migration
+class CreateWebsiteItems < ActiveRecord::Migration
   def change
-    create_table :web_items do |t|
+    create_table :website_items do |t|
       t.references :item, null: false, index: true
       t.references :website, null: false, index: true
       t.string :url, null: false
@@ -10,6 +10,6 @@ class CreateWebItems < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_money :items, :price, currency: { present: true }
+    add_money :website_items, :price, currency: { present: true }
   end
 end
