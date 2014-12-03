@@ -44,8 +44,10 @@ gem 'countries'
 gem "rack-dev-mark"
 gem "carrierwave"
 gem 'upmin-admin'
+
 gem 'inherited_resources', github: 'codecraft63/inherited_resources', branch: 'master'
 gem 'activeadmin', github: 'activeadmin'
+gem 'country_select', github: 'stefanpenner/country_select'
 # gem 'activeadmin'
 # gem 'rails_admin'
 

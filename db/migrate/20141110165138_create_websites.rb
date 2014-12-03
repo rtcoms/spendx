@@ -5,7 +5,7 @@ class CreateWebsites < ActiveRecord::Migration
       t.string :country, null: false, index: true
       t.string :website_url, null: false
       t.string :currency, null: false
-      t.string :affiliate_id, null: false
+      t.string :affiliate_code, null: false
 
       t.timestamps null: false
     end

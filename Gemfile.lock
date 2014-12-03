@@ -28,6 +28,13 @@ GIT
       responders (~> 2.0)
 
 GIT
+  remote: git://github.com/stefanpenner/country_select.git
+  revision: 585e9538a01ae9878e92f12a98261a09842ed015
+  specs:
+    country_select (2.1.0)
+      countries (~> 0.9, >= 0.9.3)
+
+GIT
   remote: https://github.com/plataformatec/devise.git
   revision: 1d8890b77372b9c4fd3ec8e9b4963d76774ed33c
   branch: lm-rails-4-2
@@ -344,6 +351,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.0.0)
   countries
+  country_select!
   devise!
   inherited_resources!
   jazz_hands
