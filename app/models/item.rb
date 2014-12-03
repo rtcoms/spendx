@@ -2,7 +2,7 @@ class Item < ActiveRecord::Base
 
   validates :name, :description, presence: true
 
-  has_many :websites, through: web_items
+  has_many :websites, through: :web_items
 
 end
 
